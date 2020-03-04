@@ -1,0 +1,71 @@
+<div class="main-tour container-fluid  msm-t-xxl">
+    <div class="row">
+        <div class="col offset-lg-6 tour-mail d-flex">
+            <div class="justify-content-center col-lg-6 offset-lg-3 align-self-center mx-auto">
+                <form id="sendEmail" [formGroup]="emailForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group" [ngClass]="{'has-danger' : emailErrors.fullName}">
+                        <label for="Name" class="control-label">Name:</label>
+                        <input type="text" (blur)="loginValidation()" class="form-control" formControlName="fullName" placeholder="Enter fullname" id="Name">
+                        <span class="form-control-feedback" *ngIf="emailErrors.fullName">
+                            {{emailErrors.fullName}}
+                          </span>
+                    </div>
+
+                    <div class="form-group" [ngClass]="{'has-danger' : emailErrors.email}">
+                        <label for="email">Email address:</label>
+                        <input type="email" (blur)="loginValidation()" required class="form-control" placeholder="Enter email" formControlName="email" id="email">
+                        <span class="form-control-feedback" *ngIf="emailErrors.email">
+                            {{emailErrors.email}}
+                          </span>
+                    </div>
+                    <div class="form-group" [ngClass]="{'has-danger' : emailErrors.phone}">
+                        <label for="Phone">Phone:</label>
+                        <input type="tel" (blur)="loginValidation()" required class="form-control" formControlName="phone" placeholder="Enter password" id="Phone">
+                        <span class="form-control-feedback" *ngIf="emailErrors.phone">
+                            {{emailErrors.phone}}
+                          </span>
+                    </div>
+
+                    <div class="form-group" [ngClass]="{'has-danger' : emailErrors.dateTime}">
+                        <label for="dateTime">Date Time:</label>
+                        <input type="text" (blur)="loginValidation()" readonly [ngModel]="currentDate" (change)="loginValidation()" id="datetimepicker" required class="form-control" formControlName="dateTime" placeholder="Enter datetime">
+                        <span class="form-control-feedback" *ngIf="emailErrors.dateTime">
+                            {{emailErrors.dateTime}}
+                          </span>
+                    </div>
+
+
+                    <div class="form-group" [ngClass]="{'has-danger' : emailErrors.remark}">
+                        <label for="Description">Description:</label>
+                        <textarea required (blur)="loginValidation()" id="Description" formControlName="remark" class="form-control"></textarea>
+                        <span class="form-control-feedback" *ngIf="emailErrors.remark">
+                            {{emailErrors.remark}}
+                          </span>
+                    </div>
+
+                    <button type="submit" id="btnsubmit" class="btn btn-primary center-block">Schedule a tour</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 
+<script>
+    debugger;
+    $('#btnsubmit').click(function() {
+        debugger;
+        Email.send({
+            Host: "smtp.gmail.com",
+            Username: "deva@myclassboard.com",
+            Password: "deva@1234",
+            To: 'devasish.ram@gmail.com',
+            From: "deva@myclassboard.com",
+            Subject: "Send By Javascript",
+            Body: "Testing",
+        }).then(
+            message => alert("mail sent successfully")
+        );
+    })
+</script> -->

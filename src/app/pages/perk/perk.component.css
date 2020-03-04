@@ -1,0 +1,17 @@
+.bg-overlay {
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('src/assets/images/main-perks.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 100%;
+    padding-top: 70px;
+}
+
+section {
+    margin-bottom: 0;
+}
+
+p {
+    text-align: center !important;
+}

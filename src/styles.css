@@ -1,0 +1,120 @@
+/* You can add global styles to this file, and also import other style files */
+
+.slick-prev:before,
+.slick-next:before {
+    color: red !important;
+    font-size: 35px !important;
+}
+
+.slick-prev,
+.slick-next {
+    width: auto !important;
+}
+
+section {
+    margin: 50px 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: .75em 0
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: .83em 0
+}
+
+h4 {
+    margin: 1.12em 0
+}
+
+h5 {
+    font-size: .83em;
+    margin: 1.5em 0
+}
+
+h6 {
+    font-size: .75em;
+    margin: 1.67em 0
+}
+
+.m-t-xxl {
+    margin-top: 140px;
+}
+
+p {
+    text-align: justify;
+    word-spacing: -2px;
+}
+
+.divider {
+    background-color: #6d6d6d;
+    width: 7rem;
+    height: .2rem;
+    display: block;
+    margin: 2rem auto;
+}
+
+.has-danger .form-control {
+    border-color: #d9534f;
+}
+
+.has-danger .col-form-label,
+.has-danger .custom-control,
+.has-danger .form-check-label,
+.has-danger .form-control-feedback,
+.has-danger .form-control-label,
+.has-danger .control-label {
+    color: #d9534f;
+}
+
+.has-danger .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #d9534f;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(223, 109, 128, 0.25);
+}
+
+.fa-whatsapp {
+    color: green;
+}
+
+.fa-facebook {
+    color: blue;
+}
+
+.fa-instagram {
+    color: deeppink;
+}
+
+.fa-linkedin {
+    color: #0073b0
+}
+
+.nav-link {
+    font-weight: bold;
+    font-size: large;
+}
+
+@media only screen and (max-width: 600px) {
+    .slick-prev {
+        left: 0 !important;
+        z-index: 1000;
+        opacity: 1;
+    }
+    .slick-next {
+        right: 0 !important;
+        z-index: 1000;
+        opacity: 1;
+    }
+    .msm-t-xxl {
+        margin-top: 140px;
+    }
+}

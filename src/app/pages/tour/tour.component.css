@@ -1,0 +1,10 @@
+.main-tour {
+    background: url(/assets/images/main-tour.webp) left bottom no-repeat #000;
+    background-size: 100%;
+    height: 100vh;
+}
+
+.tour-mail {
+    height: 100vh;
+    background: rgba(255, 255, 255, 1);
+}
